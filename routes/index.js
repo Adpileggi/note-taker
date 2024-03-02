@@ -1,7 +1,8 @@
-// getNotes route
+const router = require('express').Router()
+// import modules
+const notes = require('./notes')
 
-// saveNote route
-
-// BONUS: delete notes route
-
+// use route
+router.use('/notes', notes)
 // export file
+module.exports = router;
